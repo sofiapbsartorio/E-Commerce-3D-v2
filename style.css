@@ -1,0 +1,144 @@
+/* Geral */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  color: #104217;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  color: #555;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #104217;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 992px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+}
+
+/* Seção de Introdução */
+#intro {
+  height: 50vh;
+  background-image: url('./img/fundo-homepage.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#intro .mask {
+  background-color: rgba(250, 182, 162, 0.15);
+}
+
+/* Estilos para a área de produtos */
+.model-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.product-item {
+  margin: 15px;
+  max-width: 300px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+model-viewer {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.model-viewer-pagina {
+  width: 100%;
+  height: 450px;
+}
+
+.product-info {
+  padding: 15px;
+}
+
+.product-info h5 {
+  font-size: 1.4rem;
+  color: #104217;
+  margin-bottom: 5px;
+}
+
+.product-info h6 {
+  font-size: 1.2rem;
+  color: #352c2c;
+}
+
+.product-info p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Botões */
+.btn {
+  background-color: #104217;
+  border: none;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #083210;
+}
+
+/* Carrossel */
+#carouselSection {
+  margin-top: 20px;
+}
+
+#imageCarousel {
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
